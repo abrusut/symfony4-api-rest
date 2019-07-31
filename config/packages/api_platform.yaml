@@ -1,0 +1,21 @@
+api_platform:
+    title: 'Gastos API'
+    version: '1.0'
+    path_segment_name_generator: 'api_platform.path_segment_name_generator.underscore'
+    eager_loading:
+        enabled: false
+        fetch_partial: false
+        max_joins: 30
+        force_eager: false
+    swagger:
+        api_keys:
+            apiKey:
+                name: Authorization
+                type: header
+    mapping:
+        paths:
+            - '%kernel.project_dir%/src/Doctrine/Mapping/Entity'
+            - '%kernel.project_dir%/config/api_platform'
+    collection:
+        pagination:
+            items_per_page: 20

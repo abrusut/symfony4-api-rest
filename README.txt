@@ -9,7 +9,7 @@ composer require doctrine
 composer require "lexik/jwt-authentication-bundle" 
 (https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/index.md#installation)
 
-composer require ramsey/uuid
+composer require ramsey/uuid-doctrine -vvv
 (https://github.com/ramsey/uuid)
 
 2) Generar clave privada y publica

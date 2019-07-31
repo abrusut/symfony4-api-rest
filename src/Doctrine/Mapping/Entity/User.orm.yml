@@ -3,7 +3,7 @@ App\Entity\User:
   table: user
 
   lifecycleCallbacks:
-    preUpdate: (markAsUpdated)
+    preUpdate: [markAsUpdated]
 
   id:
     id: 

@@ -1,0 +1,17 @@
+App\Entity\User:
+  attributes:
+    normalization_context:
+      groups: ['user_read']
+    denormalization_context:
+      groups: ['user_write']
+  collectionOperations: []
+  itemOperations:
+    get:
+      method: 'GET'
+      access_control: 'is_granted("USER_READ", object)'
+    put:
+      method: 'PUT'
+      access_control: 'is_granted("USER_UPDATE", object)'
+    delete:
+      method: 'DELETE'
+      access_control: 'is_granted("USER_DELETE", object)'

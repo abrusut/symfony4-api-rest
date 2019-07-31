@@ -46,5 +46,16 @@ class UserProvider implements UserProviderInterface {
         }
         return $user;
     }
+
+    /**
+     * Whether this provider supports the given user class.
+     *
+     * @param string $class
+     *
+     * @return bool
+     */
+    public function supportsClass($class){
+
+    }
 }
 
